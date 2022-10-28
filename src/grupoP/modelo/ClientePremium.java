@@ -24,6 +24,9 @@ public class ClientePremium extends Cliente{
     }
 
     public String tipoCliente(){
-        return "Cliente Estandar";
+        return "Cliente Premium";
+    }
+    public float descuentoEnv(){
+        return getDescuento();
     }
 }

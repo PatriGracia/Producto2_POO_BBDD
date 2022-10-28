@@ -67,4 +67,7 @@ public abstract class Cliente {
      */
    public abstract String tipoCliente();
 
+   //public abstract float descuentoEnv();
+
 }
+
