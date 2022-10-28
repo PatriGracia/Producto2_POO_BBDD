@@ -22,4 +22,8 @@ public class ClientePremium extends Cliente{
                 "descuento=" + descuento +
                 '}';
     }
+
+    public String tipoCliente(){
+        return "Cliente Estandar";
+    }
 }

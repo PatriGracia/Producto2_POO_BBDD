@@ -59,10 +59,12 @@ public abstract class Cliente {
     /*implementar métodos abstractos:
     - public abstract String tipoCliente();
 
-    - public abstract float calcAnual();
+    - public abstract float calcAnual(); //no entiendo este método
 
     - public abstract float descuentoEnv();
     Las clases hijas implementan métodos abstractos
 
      */
+   public abstract String tipoCliente();
+
 }
