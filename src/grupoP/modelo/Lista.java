@@ -1,7 +1,9 @@
 package grupoP.modelo;
 
 
-    /*
+import java.util.ArrayList;
+
+/*
      - public class Lista<T> {
         protected ArrayList<T> lista;
         …
@@ -19,6 +21,7 @@ package grupoP.modelo;
         }
         public int getSize() {
 // TO-BE-DONE
+            return 0; //esta linea la añade el programa
         }
         public void add(T t) {
 // TO-BE-DONE
@@ -28,12 +31,14 @@ package grupoP.modelo;
         }
         public T getAt(int position) {
 // TO-BE-DONE
+            return null; //esta linea la añade el programa
         }
         public void clear() {
 // TO-BE-DONE
         }
         public boolean isEmpty() {
 // TO-BE-DONE
+            return false; //esta linea la ha añadido el programa, no es parte del enunciado
         }
         public ArrayList<T> getArrayList() {
             ArrayList<T> arrlist = new ArrayList<>(lista);

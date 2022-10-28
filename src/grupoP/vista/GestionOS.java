@@ -3,7 +3,7 @@ package grupoP.vista;
 import grupoP.controlador.Controlador;
 import java.util.Scanner;
 
-public class GestionOs {
+public class GestionOS {
     private Controlador controlador;
     Scanner teclado = new Scanner(System.in);
     public GestionOS() {
@@ -35,8 +35,7 @@ public class GestionOs {
     }
     char pedirOpcion() {
         String resp;
-        System.out.println("Elige una opción (1,2,3 o 0):
-                ");
+        System.out.println("Elige una opción (1,2,3 o 0): ");
                 resp = teclado.nextLine();
         if (resp.isEmpty()) {
             resp = " ";
