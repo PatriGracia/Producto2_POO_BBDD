@@ -1,6 +1,6 @@
 package grupoP.modelo;
 
-public class Cliente {
+public abstract class Cliente {
     private String nombre;
     private String domicilio;
     private String nif;
@@ -12,7 +12,6 @@ public class Cliente {
         this.domicilio = domicilio;
         this.nif = nif;
         this.email = email;
-
     }
 
     public String getNombre() {
@@ -56,4 +55,14 @@ public class Cliente {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    /*implementar métodos abstractos:
+    - public abstract String tipoCliente();
+
+    - public abstract float calcAnual();
+
+    - public abstract float descuentoEnv();
+    Las clases hijas implementan métodos abstractos
+
+     */
 }
