@@ -13,4 +13,9 @@ public class ClienteEstandar extends Cliente{
     public String tipoCliente(){
         return "Cliente Estandar";
     }
+
+    public float descuentoEnv(){
+        float descuentoEnv = 1;
+        return descuentoEnv;
+    }
 }

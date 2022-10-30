@@ -4,11 +4,6 @@ package grupoP.modelo;
 import java.util.ArrayList;
 
 /*
-     - public class Lista<T> {
-        protected ArrayList<T> lista;
-        …
-    }
-
     - En la declaración anterior, T constituye un parámetro que incide en el
     tipo de elemento que se gestiona en el atributo lista, de tipo ArrayList.
     A partir de la clase Lista, se definirán las clases derivadas:
@@ -25,9 +20,11 @@ import java.util.ArrayList;
         }
         public void add(T t) {
 // TO-BE-DONE
+            lista.add(t);
         }
         public void borrar(T t) {
 // TO-BE-DONE
+            lista.remove(t);
         }
         public T getAt(int position) {
 // TO-BE-DONE
@@ -35,10 +32,11 @@ import java.util.ArrayList;
         }
         public void clear() {
 // TO-BE-DONE
+            lista.clear();
         }
         public boolean isEmpty() {
 // TO-BE-DONE
-            return false; //esta linea la ha añadido el programa, no es parte del enunciado
+            return true;
         }
         public ArrayList<T> getArrayList() {
             ArrayList<T> arrlist = new ArrayList<>(lista);

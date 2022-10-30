@@ -11,9 +11,51 @@ public class Datos {
     private ListaClientes listaClientes;
     private ListaPedidos listaPedidos;
     public Datos (){
-        listaArticulos = new ListaArticulos ();
+        listaArticulos = new ListaArticulos();
         listaClientes = new ListaClientes();
         listaPedidos = new ListaPedidos ();
     }
 // TO-BE-DONE
+
+    public ListaArticulos getListaArticulos() {
+        return listaArticulos;
+    }
+
+    public void setListaArticulos(ListaArticulos listaArticulos) {
+        this.listaArticulos = listaArticulos;
+    }
+
+    public ListaClientes getListaClientes() {
+        return listaClientes;
+    }
+
+    public void setListaClientes(ListaClientes listaClientes) {
+        this.listaClientes = listaClientes;
+    }
+
+    public ListaPedidos getListaPedidos() {
+        return listaPedidos;
+    }
+
+    public void setListaPedidos(ListaPedidos listaPedidos) {
+        this.listaPedidos = listaPedidos;
+    }
+
+
+
+  /*
+    public void addArticulo(Articulo articulo){
+        listaArticulos.add(articulo);
+    }
+
+*/
+   /* public boolean addArticulo(Articulo articulo){
+        for(Articulo art: listaArticulos){
+            if(art.getIdArticulo() == articulo.getIdArticulo()){
+                return false;
+            }
+        }
+        listaArticulos.add(articulo);
+        return true;
+    }*/
 }
