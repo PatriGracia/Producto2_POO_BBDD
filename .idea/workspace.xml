@@ -4,12 +4,13 @@
     <list default="true" id="b11e1682-60cf-40b3-8205-212dd7f73252" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/grupoP/controlador/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/controlador/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/ClienteEstandar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/ClienteEstandar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Articulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Articulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Datos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Datos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Lista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Lista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/ListaArticulos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/ListaArticulos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/ListaClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/ListaClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/ListaPedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/ListaPedidos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/vista/GestionOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/vista/GestionOS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666958048396</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Terminada la clase Pedido y Diferentes pruebas.">
+      <created>1667156845088</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667156845088</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +84,35 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Preparando los ArrayList" />
     <MESSAGE value="Preparando los ArrayList, borrado del main automático" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparando los ArrayList, borrado del main automático" />
+    <MESSAGE value="Terminada la clase Pedido y Diferentes pruebas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Terminada la clase Pedido y Diferentes pruebas." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/grupoP/vista/GestionOS.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="grupoP.modelo.ListaArticulos" memberName="articulo" />
+        <PinnedItemInfo parentTag="grupoP.modelo.ListaArticulos" memberName="lista" />
+        <PinnedItemInfo parentTag="grupoP.controlador.Controlador" memberName="datos" />
+        <PinnedItemInfo parentTag="grupoP.modelo.Datos" memberName="listaArticulos" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -1,12 +1,13 @@
 package grupoP.modelo;
 
-public class Articulo {
+public class Articulo{
     private String idArticulo;
     private String descripcion;
     private float precio;
     private float gastosEnvio;
     private int tiempoPreparacion;
 
+    public Articulo(){}
     public Articulo(String idArticulo, String descripcion, float precio, float gastosEnvio, int tiempoPreparacion) {
         this.idArticulo = idArticulo;
         this.descripcion = descripcion;
@@ -65,4 +66,5 @@ public class Articulo {
                 ", tiempoPreparacion=" + tiempoPreparacion +
                 '}';
     }
+
 }

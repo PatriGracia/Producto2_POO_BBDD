@@ -11,16 +11,30 @@ import java.util.ArrayList;
      */
     public class Lista<T> {
         protected ArrayList<T> lista;
-        public Lista() {
-            lista = new ArrayList<>();
+
+    public Lista(ArrayList<T> lista) {
+        this.lista = lista;
+    }
+
+    public ArrayList<T> getLista() {
+        return lista;
+    }
+
+    public void setLista(ArrayList<T> lista) {
+        this.lista = lista;
+    }
+
+    public Lista() {
+           lista = new ArrayList<>();
         }
         public int getSize() {
 // TO-BE-DONE
-            return 0; //esta linea la añade el programa
+
+            return lista.size();
         }
         public void add(T t) {
 // TO-BE-DONE
-            lista.add(t);
+           // lista.add(t);
         }
         public void borrar(T t) {
 // TO-BE-DONE
@@ -42,4 +56,9 @@ import java.util.ArrayList;
             ArrayList<T> arrlist = new ArrayList<>(lista);
             return arrlist;
         }
+
+    public Lista copia(Lista li) {
+        return null;
     }
+
+}
