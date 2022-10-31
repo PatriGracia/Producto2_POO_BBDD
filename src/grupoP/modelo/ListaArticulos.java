@@ -25,25 +25,4 @@ public  class ListaArticulos extends Lista<Articulo> {
     }
 
 
-    public Articulo nuevoArticulo(String id, String descripcion, float precio, float gastos, int tiempo){
-        System.out.println(lista.size());
-        articulo = new Articulo();
-        articulo.setIdArticulo(id);
-        articulo.setDescripcion(descripcion);
-        articulo.setPrecio(precio);
-        articulo.setGastosEnvio(gastos);
-        articulo.setTiempoPreparacion(tiempo);
-
-        System.out.println(lista.size());
-        return articulo;
-
-    }
-
-
-    public Lista copia (Lista l) {
-        ListaArticulos la = (ListaArticulos) l;
-        ListaArticulos copia = new ListaArticulos(la.getArticulo()) {
-        };
-        return copia;
-    }
 }

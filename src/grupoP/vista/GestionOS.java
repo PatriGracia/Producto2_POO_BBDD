@@ -92,9 +92,6 @@ public class GestionOS {
         int tiempoPreparacion= teclado.nextInt();;
         teclado.nextLine();
 
-
-
-
         //controlador = new Controlador();
         controlador.entradaDatos(id,descripcion,precio,gastosEnvio,tiempoPreparacion);
 
@@ -102,9 +99,19 @@ public class GestionOS {
 
     void mostrarArticulo(){
 
+
+        for(int i = 0; i < controlador.getDatos().getListaArticulos().getSize(); i++){
+
+            System.out.println(controlador.getDatos().getListaArticulos().getAt(i).toString());
+
+        }
+
+
         //controlador = new Controlador();
-        int i = controlador.getDatos().getListaArticulos().getSize();
-        System.out.println(i);
+
+        int j = controlador.getDatos().getListaArticulos().getSize();
+        System.out.println(j);
+
         //String id = controlador.getDatos().getListaArticulos().getArticulo().getIdArticulo();
 
 

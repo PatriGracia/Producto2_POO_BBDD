@@ -14,13 +14,13 @@ public class Datos {
     private ListaArticulos listaArticulos;
     private ListaClientes listaClientes;
     private ListaPedidos listaPedidos;
-    private ArrayList<Articulo> list;
+
 
     public Datos() {
         listaArticulos = new ListaArticulos();
         listaClientes = new ListaClientes();
         listaPedidos = new ListaPedidos();
-        list = new ArrayList<>();
+
     }
 // TO-BE-DONE
 
@@ -49,10 +49,10 @@ public class Datos {
     }
 
     public void aniadir(String id, String descripcion, float precio, float gastosEnvio, int tiempoPreparacion) {
-        list.add(new Articulo(id, descripcion, precio, gastosEnvio, tiempoPreparacion));
-        listaArticulos.lista.add(new Articulo(id, descripcion, precio, gastosEnvio, tiempoPreparacion));
 
-        //-----Hasta aqui funciona----//
+        listaArticulos.add(new Articulo(id, descripcion, precio, gastosEnvio, tiempoPreparacion));
+
+
     }
 }
 

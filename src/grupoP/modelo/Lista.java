@@ -34,7 +34,7 @@ import java.util.ArrayList;
         }
         public void add(T t) {
 // TO-BE-DONE
-           // lista.add(t);
+           lista.add(t);
         }
         public void borrar(T t) {
 // TO-BE-DONE
@@ -42,7 +42,8 @@ import java.util.ArrayList;
         }
         public T getAt(int position) {
 // TO-BE-DONE
-            return null; //esta linea la añade el programa
+            return lista.get(position);
+
         }
         public void clear() {
 // TO-BE-DONE
