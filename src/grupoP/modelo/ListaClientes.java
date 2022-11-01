@@ -1,10 +1,16 @@
 package grupoP.modelo;
 
+import java.util.ArrayList;
+
 public class ListaClientes extends Lista<Cliente> {
     private Cliente cliente;
 
     public ListaClientes(Cliente cliente){
         this.cliente=cliente;
+    }
+
+    public ListaClientes(ArrayList lista){
+        super(lista);
     }
 
     public ListaClientes(){}

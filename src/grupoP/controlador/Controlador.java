@@ -1,7 +1,4 @@
 package grupoP.controlador;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 
 
 import grupoP.modelo.Datos;
@@ -28,8 +25,17 @@ public class Controlador {
     }
 
 
-    public void entradaDatos(String id, String descripcion, float precio, float gastosEnvio, int tiempoPreparacion) {
-        datos.aniadir(id, descripcion, precio, gastosEnvio, tiempoPreparacion);
+    public void entradaArticulo(String id, String descripcion, float precio, float gastosEnvio, int tiempoPreparacion) {
+        datos.aniadirArticulo(id, descripcion, precio, gastosEnvio, tiempoPreparacion);
+
+    }
+
+    public void entradaCliente(String nombre, String domicilio, String nif, String email, Float descuento){
+        if(descuento != null){
+            datos.aniadirCliente(nombre, domicilio, nif, email, descuento);
+        }else {
+            datos.aniadirCliente(nombre, domicilio, nif, email, null);
+        }
 
     }
 

@@ -7,7 +7,12 @@ public class ClienteEstandar extends Cliente{
 
     @Override
     public String toString() {
-        return "ClienteEstandar{}";
+        return "Cliente Estándar{" +
+                "Nombre: " + getNombre() +
+                " Domicilio: " + getDomicilio() +
+                " Nif: " + getNif() +
+                " Email: " + getEmail() +
+                '}';
     }
 
     public String tipoCliente(){

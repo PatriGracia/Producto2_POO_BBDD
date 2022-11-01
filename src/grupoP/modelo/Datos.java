@@ -1,9 +1,5 @@
 package grupoP.modelo;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
 /*
 La clase Datos es la clase principal del paquete del modelo, puesto que
 contiene y gestiona todos los datos de la aplicación y es el enlace entre
@@ -48,12 +44,21 @@ public class Datos {
         this.listaPedidos = listaPedidos;
     }
 
-    public void aniadir(String id, String descripcion, float precio, float gastosEnvio, int tiempoPreparacion) {
+    public void aniadirArticulo(String id, String descripcion, float precio, float gastosEnvio, int tiempoPreparacion) {
 
         listaArticulos.add(new Articulo(id, descripcion, precio, gastosEnvio, tiempoPreparacion));
+    }
 
+    public void aniadirCliente(String nombre, String domicilio, String nif, String email, Float descuento){
+        if(descuento != null){
+            listaClientes.add(new ClientePremium(nombre, domicilio, nif, email, descuento));
+        }else{
+            listaClientes.add(new ClienteEstandar(nombre, domicilio, nif, email));
+        };
 
     }
+
+
 }
 
 
