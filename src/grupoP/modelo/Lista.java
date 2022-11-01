@@ -58,8 +58,4 @@ import java.util.ArrayList;
             return arrlist;
         }
 
-    public Lista copia(Lista li) {
-        return null;
-    }
-
 }

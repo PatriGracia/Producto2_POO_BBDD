@@ -1,19 +1,27 @@
 package grupoP.modelo;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Pedido {
     private int numPedido;
     private int cantidad;
-    private LocalDate fecha;
+    private LocalDateTime fecha;
     private Cliente cliente;
     private Articulo articulo;
 
-    public Pedido (int numPedido, int cantidad, LocalDate fecha, Cliente cliente, Articulo articulo){
+    public Pedido (int numPedido, int cantidad, LocalDateTime fecha, Cliente cliente, Articulo articulo){
         this.numPedido = numPedido;
         this.cantidad = cantidad;
         this.fecha = fecha;
         this.cliente = cliente;
+        this.articulo = articulo;
+    }
+
+    public Pedido (int numPedido, int cantidad, LocalDateTime fecha, Articulo articulo){
+        this.numPedido = numPedido;
+        this.cantidad = cantidad;
+        this.fecha = fecha;
         this.articulo = articulo;
     }
 
@@ -33,11 +41,11 @@ public class Pedido {
         this.cantidad = cantidad;
     }
 
-    public LocalDate getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
     }
 
@@ -58,13 +66,21 @@ public class Pedido {
     }
 
     public boolean pedidoEnviado(){
-        LocalDate hoy = LocalDate.now();
-        if(getFecha().isBefore(hoy)){
-            System.out.printf("El pedido ya ha sido enviado");
+        LocalDateTime hoy = LocalDateTime.now();
+        if((getFecha().plusMinutes(getArticulo().getTiempoPreparacion())).isBefore(hoy)){
             return true;
+
         }
-        System.out.printf("El pedido no ha sido enviado");
         return false;
+    }
+    public String comprobar(){
+        String enviado = "";
+        if(pedidoEnviado()){
+            enviado = "El pedido ya se ha enviado";
+        }else{
+            enviado = "El pedido está pendiente de envío";
+        }
+        return enviado;
     }
 
     public float precioEnvio(){
@@ -80,7 +96,7 @@ public class Pedido {
                 ", cliente=" + cliente +
                 ", artículo=" + articulo +
                 ", precio total=" + precioEnvio() +
-                ", estado del pedido=" + pedidoEnviado() +
+                ", estado del pedido=" + comprobar() +
                 '}';
     }
 
