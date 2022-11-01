@@ -100,7 +100,6 @@ public class Datos {
         int contenido = -1;
         if (existeCliente(email)) {
             contenido = dameCliente(email);
-            System.out.println("Ya existe ese producto");
             listaPedidos.add(new Pedido(numPedido, cantidad, fecha, getListaClientes().getAt(contenido), dameArticulo(id)));
             return true;
         }

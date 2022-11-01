@@ -24,7 +24,11 @@ public class Pedido {
         this.fecha = fecha;
         this.articulo = articulo;
     }
-
+    public Pedido(int numPedido, int cantidad, LocalDateTime fecha) {
+        this.numPedido = numPedido;
+        this.cantidad = cantidad;
+        this.fecha = fecha;
+    }
     public int getNumPedido() {
         return numPedido;
     }
@@ -84,7 +88,7 @@ public class Pedido {
     }
 
     public float precioEnvio(){
-        float costeTotal = (articulo.getPrecio() + articulo.getGastosEnvio()) * getCliente().descuentoEnv();
+        float costeTotal = ((articulo.getPrecio() + articulo.getGastosEnvio())) - ((articulo.getPrecio() + articulo.getGastosEnvio()) * getCliente().descuentoEnv())/100;
         return costeTotal;
     }
     @Override
