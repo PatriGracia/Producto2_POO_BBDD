@@ -21,7 +21,6 @@ public class Datos {
         listaPedidos = new ListaPedidos();
 
     }
-// TO-BE-DONE
 
     public ListaArticulos getListaArticulos() {
         return listaArticulos;
@@ -156,7 +155,6 @@ public class Datos {
 
     public void borrarPedido(int numPedido){
         for(Pedido p : listaPedidos.lista){
-            boolean prueba = p.pedidoEnviado();
             if(numPedido == p.getNumPedido() && p.pedidoEnviado() == true){
                 listaPedidos.borrar(p);
                 break;

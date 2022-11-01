@@ -33,4 +33,9 @@ public class ClientePremium extends Cliente{
     public float descuentoEnv(){
         return getDescuento();
     }
+
+    public  float calcAnual(){
+        float calcA = 30;
+        return calcA;
+    }
 }

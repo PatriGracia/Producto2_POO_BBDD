@@ -23,4 +23,8 @@ public class ClienteEstandar extends Cliente{
         float descuentoEnv = 1;
         return descuentoEnv;
     }
+    public  float calcAnual(){
+        float calcA = 0;
+        return calcA;
+    }
 }

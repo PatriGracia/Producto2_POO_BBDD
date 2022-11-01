@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b11e1682-60cf-40b3-8205-212dd7f73252" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/grupoP/modelo/PedidoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrupoP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GrupoP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/ClienteEstandar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/ClienteEstandar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/ClientePremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/ClientePremium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Datos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Datos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Lista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Lista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/grupoP/modelo/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/modelo/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grupoP/vista/GestionOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grupoP/vista/GestionOS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667335520857</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Se añade ClaseTest para hacer las pruebas Junit">
+      <created>1667340909897</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667340909897</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +140,8 @@
     <MESSAGE value="Terminado todo Articulo" />
     <MESSAGE value="Terminado todo Cliente" />
     <MESSAGE value="Se implementan todas las clases y métodos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementan todas las clases y métodos." />
+    <MESSAGE value="Se añade ClaseTest para hacer las pruebas Junit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añade ClaseTest para hacer las pruebas Junit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -139,11 +150,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/grupoP/modelo/Datos.java</url>
-          <line>159</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

@@ -103,16 +103,5 @@ public class Pedido {
                 ", estado del pedido=" + comprobar() +
                 '}';
     }
-
-    /*
-    - public boolean pedidoEnviado();
-
-    - public float precioEnvio();
-
-    - El método toString debe construir una cadena con los datos siguientes:
-    número de pedido, fecha y hora del pedido, Nif y nombre del cliente,
-    código y descripción del artículo, cantidad, precio artículo, coste envío,
-    precio total y si ya se ha enviado.
-     */
 }
 

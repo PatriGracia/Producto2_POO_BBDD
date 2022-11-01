@@ -65,6 +65,7 @@ public abstract class Cliente {
     Las clases hijas implementan métodos abstractos
 
      */
+    public abstract float calcAnual();
    public abstract String tipoCliente();
 
    public abstract float descuentoEnv();

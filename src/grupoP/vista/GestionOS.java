@@ -26,15 +26,12 @@ public class GestionOS {
             opcio = pedirOpcion();
             switch (opcio) {
                 case '1':
-                    // TO-BE-DONE Gestión Articulos
                     gestionArticulos();
                     break;
                 case '2':
-                    // TO-BE-DONE Gestión Clientes
                     gestionClientes();
                     break;
                 case '3':
-                    // TO-BE-DONE Gestión Pedidos
                     gestionPedidos();
                     break;
                 case '0':
@@ -63,13 +60,11 @@ public class GestionOS {
             opcio = pedirOpcion();
             switch (opcio) {
                 case '1':
-                    // TO-BE-DONE Añadir Articulo
                     addArticulo();
                     break;
                 case '2':
                     mostrarArticulos();
                     break;
-
                 case '0':
                     cancelar = true;
             }
@@ -79,12 +74,6 @@ public class GestionOS {
     void addArticulo(){
         System.out.printf("Añade Id de Artículo: ");
         String id = teclado.nextLine();
-        /*
-        if (existeProducto(codigo)) {
-            System.out.println("Ya existe ese producto");
-            return;
-        }
-         */
         System.out.println("Descripcion: ");
         String descripcion = teclado.nextLine();
         System.out.println("Precio: ");
@@ -97,7 +86,6 @@ public class GestionOS {
         int tiempoPreparacion= teclado.nextInt();;
         teclado.nextLine();
 
-        //controlador = new Controlador();
         controlador.entradaArticulo(id,descripcion,precio,gastosEnvio,tiempoPreparacion);
         System.out.println("Se ha añadido el nuevo Articulo");
     }
@@ -121,22 +109,17 @@ public class GestionOS {
             opcio = pedirOpcion();
             switch (opcio) {
                 case '1':
-                    // Añadir cliente
                     addCliente();
                     break;
                 case '2':
-                    //Mostrar clientes
                     mostrarClientes();
                     break;
                 case '3':
-                    // Mostrar Cliente estandar
                     mostrarClientesEstandar();
                     break;
                 case '4':
-                    //mostrar cliente premium
                     mostrarClientesPremium();
                     break;
-
                 case '0':
                     cancelar = true;
             }
@@ -146,12 +129,6 @@ public class GestionOS {
     void addCliente() {
         System.out.printf("Añade nombre del Cliente: ");
         String nombre = teclado.nextLine();
-        /*
-        if (existeProducto(codigo)) {
-            System.out.println("Ya existe ese producto");
-            return;
-        }
-         */
         System.out.println("Domicilio: ");
         String domicilio = teclado.nextLine();
         System.out.println("Nif: ");
@@ -172,6 +149,10 @@ public class GestionOS {
             case "2":
                 System.out.println("Descuento: ");
                 float descuento = teclado.nextFloat();
+                /*
+                El descuento siempre es de 20 según el caso Práctico, pero para poder comprobar
+                si los métodos funcionan, pasaremos de forma variable el decuento
+                 */
                 teclado.nextLine();
 
                 controlador.entradaCliente(nombre, domicilio, nif,email, descuento);
@@ -214,22 +195,17 @@ public class GestionOS {
             opcio = pedirOpcion();
             switch (opcio) {
                 case '1':
-                    // Añadir pedido
                     addPedido();
                     break;
                 case '2':
-                    //Eliminar pedido
                     eliminarPedido();
                     break;
                 case '3':
-                    // Mostrar pedidos pendientes de envío
                     mostrarPedidosPendientes();
                     break;
                 case '4':
-                    //Mostrar pedidos enviados
                     mostrarPedidosEnviados();
                     break;
-
                 case '0':
                     cancelar = true;
             }
@@ -240,12 +216,6 @@ public class GestionOS {
         System.out.printf("Número de pedido: ");
         int numPedido = teclado.nextInt();
         teclado.nextLine();
-        /*
-        if (existeProducto(codigo)) {
-            System.out.println("Ya existe ese producto");
-            return;
-        }
-         */
         System.out.println("Cantidad: ");
         int cantidad = teclado.nextInt();
         teclado.nextLine();
@@ -288,11 +258,9 @@ public class GestionOS {
             opcio = pedirOpcion();
             switch (opcio) {
                 case '1':
-                    // Mostrar todos los pedidos pendientes de envío
                     motrarTodosPendientes();
                     break;
                 case '2':
-                    //Filtrar por cliente
                     filtrarClientePend();
                     break;
                 case '0':
@@ -325,11 +293,9 @@ public class GestionOS {
             opcio = pedirOpcion();
             switch (opcio) {
                 case '1':
-                    // Mostrar todos los pedidos enviados
                     motrarTodosEnviados();
                     break;
                 case '2':
-                    //Filtrar por cliente
                     filtrarClienteEnv();
                     break;
                 case '0':
